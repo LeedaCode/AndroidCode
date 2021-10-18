@@ -18142,42 +18142,53 @@
       "properties": {
         "commentDate": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "refType": null
         },
         "content": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "likeNum": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "movieId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "movieName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "nickName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "score": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "userId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "userName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "FilmComment"
@@ -21828,49 +21839,62 @@
       "type": "object",
       "properties": {
         "ancestors": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "children": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/SysDept",
             "originalRef": "SysDept"
-          }
+          },
+          "refType": "SysDept"
         },
         "delFlag": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "deptId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "deptName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "email": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "leader": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "orderNum": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "parentId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "parentName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "phone": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "status": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "SysDept"
@@ -21879,52 +21903,65 @@
       "type": "object",
       "properties": {
         "dataScope": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "delFlag": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "deptCheckStrictly": {
-          "type": "boolean"
+          "type": "boolean",
+          "refType": null
         },
         "deptIds": {
           "type": "array",
           "items": {
             "type": "integer",
             "format": "int64"
-          }
+          },
+          "refType": "integer"
         },
         "flag": {
-          "type": "boolean"
+          "type": "boolean",
+          "refType": null
         },
         "menuCheckStrictly": {
-          "type": "boolean"
+          "type": "boolean",
+          "refType": null
         },
         "menuIds": {
           "type": "array",
           "items": {
             "type": "integer",
             "format": "int64"
-          }
+          },
+          "refType": "integer"
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roleId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "roleKey": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roleName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roleSort": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "status": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "SysRole"
@@ -21933,55 +21970,69 @@
       "type": "object",
       "properties": {
         "admin": {
-          "type": "boolean"
+          "type": "boolean",
+          "refType": null
         },
         "dataScope": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "delFlag": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "deptCheckStrictly": {
-          "type": "boolean"
+          "type": "boolean",
+          "refType": null
         },
         "deptIds": {
           "type": "array",
           "items": {
             "type": "integer",
             "format": "int64"
-          }
+          },
+          "refType": "integer"
         },
         "flag": {
-          "type": "boolean"
+          "type": "boolean",
+          "refType": null
         },
         "menuCheckStrictly": {
-          "type": "boolean"
+          "type": "boolean",
+          "refType": null
         },
         "menuIds": {
           "type": "array",
           "items": {
             "type": "integer",
             "format": "int64"
-          }
+          },
+          "refType": "integer"
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roleId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "roleKey": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roleName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roleSort": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "status": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "SysRole_1"
@@ -21990,87 +22041,109 @@
       "type": "object",
       "properties": {
         "avatar": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "balance": {
-          "type": "number"
+          "type": "number",
+          "refType": null
         },
         "delFlag": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "dept": {
           "$ref": "#/definitions/SysDept",
-          "originalRef": "SysDept"
+          "originalRef": "SysDept",
+          "refType": "SysDept"
         },
         "deptId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "email": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "idCard": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "loginDate": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "refType": null
         },
         "loginIp": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "nickName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "password": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "phonenumber": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "postIds": {
           "type": "array",
           "items": {
             "type": "integer",
             "format": "int64"
-          }
+          },
+          "refType": "integer"
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roleIds": {
           "type": "array",
           "items": {
             "type": "integer",
             "format": "int64"
-          }
+          },
+          "refType": "integer"
         },
         "roles": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/SysRole",
             "originalRef": "SysRole"
-          }
+          },
+          "refType": "SysRole"
         },
         "salt": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "score": {
           "type": "integer",
-          "format": "int32"
+          "format": "int32",
+          "refType": null
         },
         "sex": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "status": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "userName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "SysUser"
@@ -22079,87 +22152,109 @@
       "type": "object",
       "properties": {
         "admin": {
-          "type": "boolean"
+          "type": "boolean",
+          "refType": null
         },
         "avatar": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "balance": {
-          "type": "number"
+          "type": "number",
+          "refType": null
         },
         "delFlag": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "dept": {
           "$ref": "#/definitions/SysDept",
-          "originalRef": "SysDept"
+          "originalRef": "SysDept",
+          "refType": "SysDept"
         },
         "deptId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "email": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "idCard": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "loginDate": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "refType": null
         },
         "loginIp": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "nickName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "phonenumber": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "postIds": {
           "type": "array",
           "items": {
             "type": "integer",
             "format": "int64"
-          }
+          },
+          "refType": "integer"
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roleIds": {
           "type": "array",
           "items": {
             "type": "integer",
             "format": "int64"
-          }
+          },
+          "refType": "integer"
         },
         "roles": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/SysRole_1",
             "originalRef": "SysRole_1"
-          }
+          },
+          "refType": "SysRole_1"
         },
         "salt": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "score": {
           "type": "integer",
-          "format": "int32"
+          "format": "int32",
+          "refType": null
         },
         "sex": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "status": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "userName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "SysUser_1"
@@ -22242,27 +22337,33 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "图标"
+          "description": "图标",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "sort": {
           "type": "integer",
           "format": "int64",
-          "description": "排序"
+          "description": "排序",
+          "refType": null
         },
         "themeDesc": {
           "type": "string",
-          "description": "描述"
+          "description": "描述",
+          "refType": null
         },
         "themeName": {
           "type": "string",
-          "description": "主题名称"
+          "description": "主题名称",
+          "refType": null
         }
       },
       "title": "主题分类"
@@ -22272,31 +22373,38 @@
       "properties": {
         "cardNum": {
           "type": "string",
-          "description": "乘车码卡号"
+          "description": "乘车码卡号",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "idCard": {
           "type": "string",
-          "description": "身份证号"
+          "description": "身份证号",
+          "refType": null
         },
         "phonenumber": {
           "type": "string",
-          "description": "联系电话"
+          "description": "联系电话",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "用户名"
+          "description": "用户名",
+          "refType": null
         }
       },
       "title": "乘车码"
@@ -22306,46 +22414,56 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "lineId": {
           "type": "integer",
           "format": "int64",
-          "description": "线路id"
+          "description": "线路id",
+          "refType": null
         },
         "offTime": {
           "type": "string",
           "format": "date-time",
-          "description": "下车时间"
+          "description": "下车时间",
+          "refType": null
         },
         "onTime": {
           "type": "string",
           "format": "date-time",
-          "description": "上车时间"
+          "description": "上车时间",
+          "refType": null
         },
         "price": {
           "type": "number",
-          "description": "价格"
+          "description": "价格",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "start": {
           "type": "string",
-          "description": "上车站点"
+          "description": "上车站点",
+          "refType": null
         },
         "stop": {
           "type": "string",
-          "description": "下车站点"
+          "description": "下车站点",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "用户名"
+          "description": "用户名",
+          "refType": null
         }
       },
       "title": "乘车记录"
@@ -22355,23 +22473,28 @@
       "properties": {
         "backAmount": {
           "type": "number",
-          "description": "优惠金额"
+          "description": "优惠金额",
+          "refType": null
         },
         "rechargeAmount": {
           "type": "number",
-          "description": "充值金额"
+          "description": "充值金额",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "ruleId": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "sort": {
           "type": "integer",
           "format": "int64",
-          "description": "排序"
+          "description": "排序",
+          "refType": null
         }
       },
       "title": "优惠规则"
@@ -22381,28 +22504,34 @@
       "properties": {
         "content": {
           "type": "string",
-          "description": "问题描述"
+          "description": "问题描述",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "停车场名称"
+          "description": "停车场名称",
+          "refType": null
         },
         "photo": {
           "type": "string",
-          "description": "纠错照片"
+          "description": "纠错照片",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "spotCount": {
           "type": "integer",
           "format": "int64",
-          "description": "停车位数"
+          "description": "停车位数",
+          "refType": null
         }
       },
       "title": "信息纠错"
@@ -22412,47 +22541,58 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "地址"
+          "description": "地址",
+          "refType": null
         },
         "allPark": {
           "type": "string",
-          "description": "总停车位"
+          "description": "总停车位",
+          "refType": null
         },
         "distance": {
           "type": "string",
-          "description": "距离（米）"
+          "description": "距离（米）",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "图片地址"
+          "description": "图片地址",
+          "refType": null
         },
         "open": {
           "type": "string",
-          "description": "对外开放"
+          "description": "对外开放",
+          "refType": null
         },
         "parkName": {
           "type": "string",
-          "description": "停车场名称"
+          "description": "停车场名称",
+          "refType": null
         },
         "priceCaps": {
           "type": "string",
-          "description": "封顶价格"
+          "description": "封顶价格",
+          "refType": null
         },
         "rates": {
           "type": "string",
-          "description": "收费"
+          "description": "收费",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "vacancy": {
           "type": "string",
-          "description": "空位个数"
+          "description": "空位个数",
+          "refType": null
         }
       },
       "title": "停车场"
@@ -22462,48 +22602,58 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "停车场地址"
+          "description": "停车场地址",
+          "refType": null
         },
         "entryTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 09:00",
-          "description": "入场时间"
+          "description": "入场时间",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "lotId": {
           "type": "integer",
           "format": "int64",
-          "description": "停车场id"
+          "description": "停车场id",
+          "refType": null
         },
         "monetary": {
           "type": "string",
-          "description": "消费金额"
+          "description": "消费金额",
+          "refType": null
         },
         "outTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 18:00",
-          "description": "出场时间"
+          "description": "出场时间",
+          "refType": null
         },
         "parkName": {
           "type": "string",
-          "description": "停车场名称"
+          "description": "停车场名称",
+          "refType": null
         },
         "parkNo": {
           "type": "string",
-          "description": "车位号"
+          "description": "车位号",
+          "refType": null
         },
         "plateNumber": {
           "type": "string",
-          "description": "车牌号"
+          "description": "车牌号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "停车记录"
@@ -22514,30 +22664,36 @@
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "money": {
           "type": "integer",
           "format": "int64",
-          "description": "充值金额（元）"
+          "description": "充值金额（元）",
+          "refType": null
         },
         "payType": {
           "type": "string",
-          "description": "支付方式"
+          "description": "支付方式",
+          "refType": null
         },
         "rechargeDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 18:20:30",
-          "description": "充值时间"
+          "description": "充值时间",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户"
+          "description": "用户",
+          "refType": null
         }
       },
       "title": "充值记录"
@@ -22547,46 +22703,56 @@
       "properties": {
         "amount": {
           "type": "number",
-          "description": "订单金额"
+          "description": "订单金额",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "ID"
+          "description": "ID",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "商家"
+          "description": "商家",
+          "refType": null
         },
         "orderNo": {
           "type": "string",
-          "description": "订单编号"
+          "description": "订单编号",
+          "refType": null
         },
         "orderStatus": {
           "type": "string",
-          "description": "订单状态"
+          "description": "订单状态",
+          "refType": null
         },
         "orderType": {
           "type": "string",
-          "description": "订单类型"
+          "description": "订单类型",
+          "refType": null
         },
         "orderTypeName": {
           "type": "string",
-          "description": "订单类型名称"
+          "description": "订单类型名称",
+          "refType": null
         },
         "payTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "支付时间"
+          "description": "支付时间",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "全部订单"
@@ -22596,19 +22762,23 @@
       "properties": {
         "companyName": {
           "type": "string",
-          "description": "公司名称"
+          "description": "公司名称",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "introductory": {
           "type": "string",
-          "description": "公司简介"
+          "description": "公司简介",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "公司管理"
@@ -22618,27 +22788,33 @@
       "properties": {
         "brief": {
           "type": "string",
-          "description": "简介"
+          "description": "简介",
+          "refType": null
         },
         "hospitalName": {
           "type": "string",
-          "description": "医院名称"
+          "description": "医院名称",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "封面"
+          "description": "封面",
+          "refType": null
         },
         "level": {
           "type": "integer",
           "format": "int32",
-          "description": "星级"
+          "description": "星级",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "医院信息"
@@ -22649,18 +22825,22 @@
         "hospitalId": {
           "type": "integer",
           "format": "int64",
-          "description": "医院id"
+          "description": "医院id",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "图片地址"
+          "description": "图片地址",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "医院轮播图"
@@ -22670,24 +22850,29 @@
       "properties": {
         "content": {
           "type": "string",
-          "description": "反馈内容"
+          "description": "反馈内容",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "反馈ID"
+          "description": "反馈ID",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "title": {
           "type": "string",
-          "description": "反馈标题"
+          "description": "反馈标题",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "反馈人用户ID"
+          "description": "反馈人用户ID",
+          "refType": null
         }
       },
       "title": "反馈实体"
@@ -22697,31 +22882,37 @@
       "properties": {
         "currentName": {
           "type": "string",
-          "description": "当前站点名称"
+          "description": "当前站点名称",
+          "refType": null
         },
         "lineId": {
           "type": "integer",
           "format": "int64",
-          "description": "路线编号"
+          "description": "路线编号",
+          "refType": null
         },
         "lineName": {
           "type": "string",
-          "description": "路线名称"
+          "description": "路线名称",
+          "refType": null
         },
         "nextStep": {
           "description": "下一站信息",
           "$ref": "#/definitions/站点信息_1",
-          "originalRef": "站点信息_1"
+          "originalRef": "站点信息_1",
+          "refType": "站点信息_1"
         },
         "preStep": {
           "description": "上一站信息",
           "$ref": "#/definitions/站点信息_1",
-          "originalRef": "站点信息_1"
+          "originalRef": "站点信息_1",
+          "refType": "站点信息_1"
         },
         "reachTime": {
           "type": "integer",
           "format": "int32",
-          "description": "达到本站时长"
+          "description": "达到本站时长",
+          "refType": null
         }
       },
       "title": "地铁信息Vo"
@@ -22731,18 +22922,22 @@
       "properties": {
         "content": {
           "type": "string",
-          "description": "公告内容"
+          "description": "公告内容",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "title": {
           "type": "string",
-          "description": "公告标题"
+          "description": "公告标题",
+          "refType": null
         }
       },
       "title": "地铁公告"
@@ -22753,22 +22948,27 @@
         "code": {
           "type": "integer",
           "format": "int64",
-          "description": "城市编码"
+          "description": "城市编码",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "城市地铁总览图"
+          "description": "城市地铁总览图",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "城市名"
+          "description": "城市名",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "地铁城市"
@@ -22778,22 +22978,27 @@
       "properties": {
         "content": {
           "type": "string",
-          "description": "声明内容"
+          "description": "声明内容",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "title": {
           "type": "string",
-          "description": "声明标题"
+          "description": "声明标题",
+          "refType": null
         },
         "type": {
           "type": "string",
-          "description": "声明类型 1 乘车须知 2 乘车卡领取通知 3 免责声明"
+          "description": "声明类型 1 乘车须知 2 乘车卡领取通知 3 免责声明",
+          "refType": null
         }
       },
       "title": "地铁声明"
@@ -22804,38 +23009,47 @@
         "cityId": {
           "type": "integer",
           "format": "int64",
-          "description": "城市id"
+          "description": "城市id",
+          "refType": null
         },
         "cityName": {
           "type": "string",
-          "description": "城市名"
+          "description": "城市名",
+          "refType": null
         },
         "end": {
           "type": "string",
-          "description": "终点站"
+          "description": "终点站",
+          "refType": null
         },
         "endTime": {
           "type": "string",
-          "description": "末班时间"
+          "description": "末班时间",
+          "refType": null
         },
         "first": {
           "type": "string",
-          "description": "始发站"
+          "description": "始发站",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "路线名称"
+          "description": "路线名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "startTime": {
           "type": "string",
-          "description": "首班时间"
+          "description": "首班时间",
+          "refType": null
         }
       },
       "title": "地铁路线"
@@ -22845,86 +23059,105 @@
       "properties": {
         "auditOffice": {
           "type": "string",
-          "description": "发证机关"
+          "description": "发证机关",
+          "refType": null
         },
         "carType": {
           "type": "string",
-          "description": "号牌种类"
+          "description": "号牌种类",
+          "refType": null
         },
         "code": {
           "type": "string",
-          "description": "通知书编号"
+          "description": "通知书编号",
+          "refType": null
         },
         "contact": {
           "type": "string",
-          "description": "联系方式"
+          "description": "联系方式",
+          "refType": null
         },
         "deductMarks": {
           "type": "integer",
           "format": "int64",
-          "description": "扣分"
+          "description": "扣分",
+          "refType": null
         },
         "fileNo": {
           "type": "string",
-          "description": "档案编号"
+          "description": "档案编号",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "illegalAddress": {
           "type": "string",
-          "description": "违章地点"
+          "description": "违章地点",
+          "refType": null
         },
         "illegalDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "违章日期"
+          "description": "违章日期",
+          "refType": null
         },
         "illegalEven": {
           "type": "string",
-          "description": "违章行为"
+          "description": "违章行为",
+          "refType": null
         },
         "illegalId": {
           "type": "integer",
           "format": "int64",
-          "description": "违章id"
+          "description": "违章id",
+          "refType": null
         },
         "licenseLevel": {
           "type": "string",
-          "description": "准驾车型"
+          "description": "准驾车型",
+          "refType": null
         },
         "licenseNo": {
           "type": "string",
-          "description": "驾驶证号"
+          "description": "驾驶证号",
+          "refType": null
         },
         "money": {
           "type": "number",
-          "description": "罚款金额"
+          "description": "罚款金额",
+          "refType": null
         },
         "performDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "处罚日期"
+          "description": "处罚日期",
+          "refType": null
         },
         "performOffice": {
           "type": "string",
-          "description": "处罚单位"
+          "description": "处罚单位",
+          "refType": null
         },
         "plateNo": {
           "type": "string",
-          "description": "车牌号"
+          "description": "车牌号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户"
+          "description": "用户",
+          "refType": null
         }
       },
       "title": "处罚通知书"
@@ -22938,12 +23171,14 @@
           "items": {
             "$ref": "#/definitions/失物招领",
             "originalRef": "失物招领"
-          }
+          },
+          "refType": "失物招领"
         },
         "publishDate": {
           "type": "string",
           "format": "date-time",
-          "description": "失物招领发布日期"
+          "description": "失物招领发布日期",
+          "refType": null
         }
       },
       "title": "失物信息"
@@ -22953,27 +23188,33 @@
       "properties": {
         "claimPlace": {
           "type": "string",
-          "description": "认领地点"
+          "description": "认领地点",
+          "refType": null
         },
         "foundPlace": {
           "type": "string",
-          "description": "拾取地点"
+          "description": "拾取地点",
+          "refType": null
         },
         "foundTime": {
           "type": "string",
           "format": "date-time",
-          "description": "拾取时间"
+          "description": "拾取时间",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "失物照片"
+          "description": "失物照片",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "失物招领"
@@ -22982,18 +23223,22 @@
       "type": "object",
       "properties": {
         "default": {
-          "type": "boolean"
+          "type": "boolean",
+          "refType": null
         },
         "dictLabel": {
           "type": "string",
-          "description": "字典标签"
+          "description": "字典标签",
+          "refType": null
         },
         "dictValue": {
           "type": "string",
-          "description": "字典键值"
+          "description": "字典键值",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "字典实体"
@@ -23003,11 +23248,13 @@
       "properties": {
         "newPassword": {
           "type": "string",
-          "description": "用户新密码"
+          "description": "用户新密码",
+          "refType": null
         },
         "oldPassword": {
           "type": "string",
-          "description": "用户旧密码"
+          "description": "用户旧密码",
+          "refType": null
         }
       },
       "title": "密码信息参数"
@@ -23017,45 +23264,55 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "家庭住址"
+          "description": "家庭住址",
+          "refType": null
         },
         "birthday": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "出生年月日"
+          "description": "出生年月日",
+          "refType": null
         },
         "cardId": {
           "type": "string",
-          "description": "身份证"
+          "description": "身份证",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "图片"
+          "description": "图片",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "姓名"
+          "description": "姓名",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "sex": {
           "type": "string",
-          "description": "性别"
+          "description": "性别",
+          "refType": null
         },
         "tel": {
           "type": "string",
-          "description": "电话"
+          "description": "电话",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "就诊卡片"
@@ -23066,24 +23323,29 @@
         "linesId": {
           "type": "integer",
           "format": "int64",
-          "description": "路线id"
+          "description": "路线id",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "站点名称"
+          "description": "站点名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "sequence": {
           "type": "integer",
           "format": "int32",
-          "description": "顺序"
+          "description": "顺序",
+          "refType": null
         },
         "stepsId": {
           "type": "integer",
           "format": "int64",
-          "description": "站点id"
+          "description": "站点id",
+          "refType": null
         }
       },
       "title": "巴士站点"
@@ -23093,58 +23355,71 @@
       "properties": {
         "end": {
           "type": "string",
-          "description": "终点"
+          "description": "终点",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "orderNum": {
           "type": "string",
-          "description": "订单号"
+          "description": "订单号",
+          "refType": null
         },
         "path": {
           "type": "string",
-          "description": "路线"
+          "description": "路线",
+          "refType": null
         },
         "payTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 10:42:51",
-          "description": "支付时间"
+          "description": "支付时间",
+          "refType": null
         },
         "paymentType": {
           "type": "string",
-          "description": "支付类型"
+          "description": "支付类型",
+          "refType": null
         },
         "price": {
           "type": "number",
-          "description": "价格"
+          "description": "价格",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "start": {
           "type": "string",
-          "description": "起点"
+          "description": "起点",
+          "refType": null
         },
         "status": {
           "type": "integer",
           "format": "int32",
-          "description": "状态  1已支付 0未支付"
+          "description": "状态  1已支付 0未支付",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "用户姓名"
+          "description": "用户姓名",
+          "refType": null
         },
         "userTel": {
           "type": "string",
-          "description": "用户电话"
+          "description": "用户电话",
+          "refType": null
         }
       },
       "title": "巴士订单"
@@ -23154,38 +23429,47 @@
       "properties": {
         "end": {
           "type": "string",
-          "description": "终点"
+          "description": "终点",
+          "refType": null
         },
         "endTime": {
           "type": "string",
-          "description": "末班时间"
+          "description": "末班时间",
+          "refType": null
         },
         "first": {
           "type": "string",
-          "description": "起点"
+          "description": "起点",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "mileage": {
           "type": "string",
-          "description": "里程"
+          "description": "里程",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "路线名称"
+          "description": "路线名称",
+          "refType": null
         },
         "price": {
           "type": "number",
-          "description": "价格"
+          "description": "价格",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "startTime": {
           "type": "string",
-          "description": "首发时间"
+          "description": "首发时间",
+          "refType": null
         }
       },
       "title": "巴士路线"
@@ -23195,33 +23479,40 @@
       "properties": {
         "advImg": {
           "type": "string",
-          "description": "广告图片"
+          "description": "广告图片",
+          "refType": null
         },
         "advTitle": {
           "type": "string",
-          "description": "广告标题"
+          "description": "广告标题",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "广告ID"
+          "description": "广告ID",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "servModule": {
           "type": "string",
-          "description": "业务模块"
+          "description": "业务模块",
+          "refType": null
         },
         "sort": {
           "type": "integer",
           "format": "int64",
-          "description": "排序"
+          "description": "排序",
+          "refType": null
         },
         "targetId": {
           "type": "integer",
           "format": "int64",
-          "description": "跳转详情id"
+          "description": "跳转详情id",
+          "refType": null
         }
       },
       "title": "广告轮播实体 "
@@ -23231,32 +23522,39 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "店家地址"
+          "description": "店家地址",
+          "refType": null
         },
         "avgCost": {
           "type": "number",
-          "description": "人均消费"
+          "description": "人均消费",
+          "refType": null
         },
         "deliveryTime": {
           "type": "integer",
           "format": "int32",
-          "description": "配送时间"
+          "description": "配送时间",
+          "refType": null
         },
         "distance": {
           "type": "number",
-          "description": "到店距离"
+          "description": "到店距离",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "店家图片"
+          "description": "店家图片",
+          "refType": null
         },
         "introduction": {
           "type": "string",
-          "description": "店家简介"
+          "description": "店家简介",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "店家名称"
+          "description": "店家名称",
+          "refType": null
         },
         "productList": {
           "type": "array",
@@ -23264,16 +23562,19 @@
           "items": {
             "$ref": "#/definitions/菜品信息",
             "originalRef": "菜品信息"
-          }
+          },
+          "refType": "菜品信息"
         },
         "saleQuantity": {
           "type": "integer",
           "format": "int64",
-          "description": "销量"
+          "description": "销量",
+          "refType": null
         },
         "score": {
           "type": "number",
-          "description": "评分"
+          "description": "评分",
+          "refType": null
         }
       },
       "title": "店家信息"
@@ -23283,62 +23584,76 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "店家地址"
+          "description": "店家地址",
+          "refType": null
         },
         "avgCost": {
           "type": "number",
-          "description": "人均消费"
+          "description": "人均消费",
+          "refType": null
         },
         "deliveryTime": {
           "type": "integer",
           "format": "int32",
-          "description": "配送时间"
+          "description": "配送时间",
+          "refType": null
         },
         "distance": {
           "type": "number",
-          "description": "到店距离"
+          "description": "到店距离",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "店家图片"
+          "description": "店家图片",
+          "refType": null
         },
         "introduction": {
           "type": "string",
-          "description": "店家简介"
+          "description": "店家简介",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "店家名称"
+          "description": "店家名称",
+          "refType": null
         },
         "recommend": {
           "type": "string",
-          "description": "是否推荐"
+          "description": "是否推荐",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "saleNum3hour": {
           "type": "integer",
           "format": "int32",
-          "description": "3小时销售量"
+          "description": "3小时销售量",
+          "refType": null
         },
         "saleQuantity": {
           "type": "integer",
           "format": "int64",
-          "description": "月销量"
+          "description": "月销量",
+          "refType": null
         },
         "score": {
           "type": "number",
-          "description": "评分"
+          "description": "评分",
+          "refType": null
         },
         "themeId": {
           "type": "integer",
           "format": "int64",
-          "description": "经营类型"
+          "description": "经营类型",
+          "refType": null
         }
       },
       "title": "店家信息_1"
@@ -23348,16 +23663,19 @@
       "properties": {
         "content": {
           "type": "string",
-          "description": "评论内容"
+          "description": "评论内容",
+          "refType": null
         },
         "orderNo": {
           "type": "string",
-          "description": "订单号"
+          "description": "订单号",
+          "refType": null
         },
         "score": {
           "type": "integer",
           "format": "int64",
-          "description": "评分1-5"
+          "description": "评分1-5",
+          "refType": null
         }
       },
       "title": "店家评论"
@@ -23434,28 +23752,34 @@
       "properties": {
         "col": {
           "type": "string",
-          "description": "座号"
+          "description": "座号",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "编号"
+          "description": "编号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roomId": {
           "type": "integer",
           "format": "int64",
-          "description": "影厅ID"
+          "description": "影厅ID",
+          "refType": null
         },
         "row": {
           "type": "string",
-          "description": "排号"
+          "description": "排号",
+          "refType": null
         },
         "status": {
           "type": "string",
-          "description": "座位状态0空闲1已售2禁售"
+          "description": "座位状态0空闲1已售2禁售",
+          "refType": null
         }
       },
       "title": "座位实体"
@@ -23466,23 +23790,28 @@
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "编号"
+          "description": "编号",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "影厅名"
+          "description": "影厅名",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "status": {
           "type": "string",
-          "description": "是否开放"
+          "description": "是否开放",
+          "refType": null
         },
         "theaterId": {
           "type": "integer",
           "format": "int64",
-          "description": "影院ID"
+          "description": "影院ID",
+          "refType": null
         }
       },
       "title": "影厅实体"
@@ -23493,72 +23822,87 @@
         "endTime": {
           "type": "string",
           "example": "11:00",
-          "description": "结束时间"
+          "description": "结束时间",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "编号"
+          "description": "编号",
+          "refType": null
         },
         "movieId": {
           "type": "integer",
           "format": "int64",
-          "description": "影片id"
+          "description": "影片id",
+          "refType": null
         },
         "movieName": {
           "type": "string",
-          "description": "影片名"
+          "description": "影片名",
+          "refType": null
         },
         "playDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "播放日期"
+          "description": "播放日期",
+          "refType": null
         },
         "playType": {
           "type": "string",
-          "description": "播放类型id"
+          "description": "播放类型id",
+          "refType": null
         },
         "price": {
           "type": "number",
           "example": 50,
-          "description": "价格"
+          "description": "价格",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roomId": {
           "type": "integer",
           "format": "int64",
-          "description": "影厅id"
+          "description": "影厅id",
+          "refType": null
         },
         "roomName": {
           "type": "string",
-          "description": "影厅名"
+          "description": "影厅名",
+          "refType": null
         },
         "saleNum": {
           "type": "integer",
           "format": "int64",
-          "description": "已售数量"
+          "description": "已售数量",
+          "refType": null
         },
         "startTime": {
           "type": "string",
           "example": "09:00",
-          "description": "开始时间"
+          "description": "开始时间",
+          "refType": null
         },
         "theaterId": {
           "type": "integer",
           "format": "int64",
-          "description": "影院id"
+          "description": "影院id",
+          "refType": null
         },
         "theatreName": {
           "type": "string",
-          "description": "影院名"
+          "description": "影院名",
+          "refType": null
         },
         "totalNum": {
           "type": "integer",
           "format": "int64",
-          "description": "总票数"
+          "description": "总票数",
+          "refType": null
         }
       },
       "title": "影片场次实体"
@@ -23568,65 +23912,79 @@
       "properties": {
         "category": {
           "type": "string",
-          "description": "影片类型编号"
+          "description": "影片类型编号",
+          "refType": null
         },
         "cover": {
           "type": "string",
-          "description": "影片封面图片地址"
+          "description": "影片封面图片地址",
+          "refType": null
         },
         "duration": {
           "type": "integer",
           "format": "int64",
-          "description": "时长"
+          "description": "时长",
+          "refType": null
         },
         "favoriteNum": {
           "type": "integer",
           "format": "int64",
-          "description": "看过人数"
+          "description": "看过人数",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "编号"
+          "description": "编号",
+          "refType": null
         },
         "introduction": {
           "type": "string",
-          "description": "简介"
+          "description": "简介",
+          "refType": null
         },
         "language": {
           "type": "string",
-          "description": "语言"
+          "description": "语言",
+          "refType": null
         },
         "likeNum": {
           "type": "integer",
           "format": "int64",
-          "description": "想看人数"
+          "description": "想看人数",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "影片名称"
+          "description": "影片名称",
+          "refType": null
         },
         "playDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-17",
-          "description": "上映时间"
+          "description": "上映时间",
+          "refType": null
         },
         "playType": {
           "type": "string",
-          "description": "播放类型编号"
+          "description": "播放类型编号",
+          "refType": null
         },
         "recommend": {
           "type": "string",
-          "description": "是否推荐"
+          "description": "是否推荐",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "score": {
           "type": "integer",
           "format": "int32",
-          "description": "评分"
+          "description": "评分",
+          "refType": null
         }
       },
       "title": "影片实体"
@@ -23638,58 +23996,70 @@
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 09:25:35",
-          "description": "购买时间"
+          "description": "购买时间",
+          "refType": null
         },
         "code": {
           "type": "string",
-          "description": "取票码"
+          "description": "取票码",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "影票id"
+          "description": "影票id",
+          "refType": null
         },
         "movieId": {
           "type": "integer",
           "format": "int64",
-          "description": "影片id"
+          "description": "影片id",
+          "refType": null
         },
         "orderItemId": {
           "type": "integer",
           "format": "int64",
-          "description": "订单明细id"
+          "description": "订单明细id",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roomId": {
           "type": "integer",
           "format": "int64",
-          "description": "影厅id"
+          "description": "影厅id",
+          "refType": null
         },
         "seatId": {
           "type": "integer",
           "format": "int64",
-          "description": "座位id"
+          "description": "座位id",
+          "refType": null
         },
         "status": {
           "type": "string",
-          "description": "取票码状态"
+          "description": "取票码状态",
+          "refType": null
         },
         "theaterId": {
           "type": "integer",
           "format": "int64",
-          "description": "影院id"
+          "description": "影院id",
+          "refType": null
         },
         "timesId": {
           "type": "integer",
           "format": "int64",
-          "description": "场次id"
+          "description": "场次id",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "影票实体"
@@ -23699,49 +24069,60 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "详细地址"
+          "description": "详细地址",
+          "refType": null
         },
         "area": {
           "type": "string",
-          "description": "所在区域"
+          "description": "所在区域",
+          "refType": null
         },
         "city": {
           "type": "string",
-          "description": "所在城市"
+          "description": "所在城市",
+          "refType": null
         },
         "cover": {
           "type": "string",
-          "description": "封面图片地址"
+          "description": "封面图片地址",
+          "refType": null
         },
         "distance": {
           "type": "string",
-          "description": "距离"
+          "description": "距离",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "编号"
+          "description": "编号",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "影院名称"
+          "description": "影院名称",
+          "refType": null
         },
         "province": {
           "type": "string",
-          "description": "所在省份"
+          "description": "所在省份",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "score": {
           "type": "integer",
           "format": "int32",
-          "description": "评分"
+          "description": "评分",
+          "refType": null
         },
         "timesId": {
           "type": "integer",
           "format": "int64",
-          "description": "场次id"
+          "description": "场次id",
+          "refType": null
         }
       },
       "title": "影院实体"
@@ -23751,44 +24132,54 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "房源地址"
+          "description": "房源地址",
+          "refType": null
         },
         "areaSize": {
           "type": "integer",
           "format": "int64",
-          "description": "面积"
+          "description": "面积",
+          "refType": null
         },
         "description": {
           "type": "string",
-          "description": "详情描述"
+          "description": "详情描述",
+          "refType": null
         },
         "houseType": {
           "type": "string",
-          "description": "房子类型"
+          "description": "房子类型",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "pic": {
           "type": "string",
-          "description": "房子图片地址"
+          "description": "房子图片地址",
+          "refType": null
         },
         "price": {
           "type": "string",
-          "description": "价格"
+          "description": "价格",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "sourceName": {
           "type": "string",
-          "description": "房源名称"
+          "description": "房源名称",
+          "refType": null
         },
         "tel": {
           "type": "string",
-          "description": "联系电话"
+          "description": "联系电话",
+          "refType": null
         }
       },
       "title": "房源信息"
@@ -23798,22 +24189,27 @@
       "properties": {
         "balance": {
           "type": "number",
-          "description": "余额"
+          "description": "余额",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "operator": {
           "type": "string",
-          "description": "运营商"
+          "description": "运营商",
+          "refType": null
         },
         "phonenumber": {
           "type": "string",
-          "description": "手机号"
+          "description": "手机号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "手机号信息"
@@ -23823,24 +24219,29 @@
       "properties": {
         "paymentType": {
           "type": "string",
-          "description": "支付类型：电子钱包"
+          "description": "支付类型：电子钱包",
+          "refType": null
         },
         "phonenumber": {
           "type": "string",
-          "description": "电话号码"
+          "description": "电话号码",
+          "refType": null
         },
         "rechargeAmount": {
           "type": "number",
-          "description": "缴费金额，必填"
+          "description": "缴费金额，必填",
+          "refType": null
         },
         "ruleId": {
           "type": "integer",
           "format": "int64",
-          "description": "优惠策略ID，如果优惠策略充值，此项必填"
+          "description": "优惠策略ID，如果优惠策略充值，此项必填",
+          "refType": null
         },
         "type": {
           "type": "string",
-          "description": "充值类型 1 自由充值 2 优惠策略充值，此项必填"
+          "description": "充值类型 1 自由充值 2 优惠策略充值，此项必填",
+          "refType": null
         }
       },
       "title": "手机话费充值参数"
@@ -23850,41 +24251,50 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "paymentAmount": {
           "type": "number",
-          "description": "支付金额"
+          "description": "支付金额",
+          "refType": null
         },
         "paymentType": {
           "type": "string",
-          "description": "支付方式"
+          "description": "支付方式",
+          "refType": null
         },
         "phonenumber": {
           "type": "string",
-          "description": "电话号码"
+          "description": "电话号码",
+          "refType": null
         },
         "rechargeAmount": {
           "type": "number",
-          "description": "充值金额"
+          "description": "充值金额",
+          "refType": null
         },
         "rechargeTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 09:32:52",
-          "description": "充值时间"
+          "description": "充值时间",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "title": {
           "type": "string",
-          "description": "标题"
+          "description": "标题",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "手机话费充值记录"
@@ -23895,47 +24305,57 @@
         "companyId": {
           "type": "integer",
           "format": "int64",
-          "description": "公司"
+          "description": "公司",
+          "refType": null
         },
         "companyName": {
           "type": "string",
-          "description": "公司名称"
+          "description": "公司名称",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "money": {
           "type": "string",
-          "description": "薪资"
+          "description": "薪资",
+          "refType": null
         },
         "postId": {
           "type": "integer",
           "format": "int64",
-          "description": "岗位"
+          "description": "岗位",
+          "refType": null
         },
         "postName": {
           "type": "string",
-          "description": "岗位名称"
+          "description": "岗位名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "satrTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "投递时间"
+          "description": "投递时间",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户"
+          "description": "用户",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "用户名"
+          "description": "用户名",
+          "refType": null
         }
       },
       "title": "投递历史"
@@ -23945,53 +24365,65 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "公司地址"
+          "description": "公司地址",
+          "refType": null
         },
         "companyId": {
           "type": "integer",
           "format": "int64",
-          "description": "公司"
+          "description": "公司",
+          "refType": null
         },
         "companyName": {
           "type": "string",
-          "description": "公司名称"
+          "description": "公司名称",
+          "refType": null
         },
         "contacts": {
           "type": "string",
-          "description": "联系人名称"
+          "description": "联系人名称",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "岗位名称"
+          "description": "岗位名称",
+          "refType": null
         },
         "need": {
           "type": "string",
-          "description": "职位需求"
+          "description": "职位需求",
+          "refType": null
         },
         "obligation": {
           "type": "string",
-          "description": "岗位职责"
+          "description": "岗位职责",
+          "refType": null
         },
         "professionId": {
           "type": "integer",
           "format": "int64",
-          "description": "职位"
+          "description": "职位",
+          "refType": null
         },
         "professionName": {
           "type": "string",
-          "description": "职位名称"
+          "description": "职位名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "salary": {
           "type": "string",
-          "description": "薪资待遇"
+          "description": "薪资待遇",
+          "refType": null
         }
       },
       "title": "招聘信息"
@@ -24002,65 +24434,79 @@
         "applierId": {
           "type": "integer",
           "format": "int64",
-          "description": "申请人"
+          "description": "申请人",
+          "refType": null
         },
         "applierName": {
           "type": "string",
-          "description": "申请人姓名"
+          "description": "申请人姓名",
+          "refType": null
         },
         "applyDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "申请日期"
+          "description": "申请日期",
+          "refType": null
         },
         "auditDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "审核日期"
+          "description": "审核日期",
+          "refType": null
         },
         "auditRemark": {
           "type": "string",
-          "description": "审批意见"
+          "description": "审批意见",
+          "refType": null
         },
         "auditor": {
           "type": "integer",
           "format": "int64",
-          "description": "审批人"
+          "description": "审批人",
+          "refType": null
         },
         "auditorName": {
           "type": "string",
-          "description": "审批人姓名"
+          "description": "审批人姓名",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "illegalId": {
           "type": "integer",
           "format": "int64",
-          "description": "违章编号"
+          "description": "违章编号",
+          "refType": null
         },
         "no": {
           "type": "string",
-          "description": "申请单号"
+          "description": "申请单号",
+          "refType": null
         },
         "photo": {
           "type": "string",
-          "description": "取证照片保存地址"
+          "description": "取证照片保存地址",
+          "refType": null
         },
         "reason": {
           "type": "string",
-          "description": "撤销原因"
+          "description": "撤销原因",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "status": {
           "type": "string",
-          "description": "状态"
+          "description": "状态",
+          "refType": null
         }
       },
       "title": "撤销申请"
@@ -24070,41 +24516,50 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "店家地址"
+          "description": "店家地址",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "店家简介"
+          "description": "店家简介",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "saleQuantity": {
           "type": "integer",
           "format": "int64",
-          "description": "销量"
+          "description": "销量",
+          "refType": null
         },
         "score": {
           "type": "number",
-          "description": "评分"
+          "description": "评分",
+          "refType": null
         },
         "sellerId": {
           "type": "integer",
           "format": "int64",
-          "description": "店家编号"
+          "description": "店家编号",
+          "refType": null
         },
         "sellerName": {
           "type": "string",
-          "description": "店家名称"
+          "description": "店家名称",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户编号"
+          "description": "用户编号",
+          "refType": null
         }
       },
       "title": "收藏"
@@ -24114,35 +24569,43 @@
       "properties": {
         "addressDetail": {
           "type": "string",
-          "description": "详细地址"
+          "description": "详细地址",
+          "refType": null
         },
         "houseNumber": {
           "type": "string",
-          "description": "门牌号"
+          "description": "门牌号",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "label": {
           "type": "string",
-          "description": "标签"
+          "description": "标签",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "姓名"
+          "description": "姓名",
+          "refType": null
         },
         "phone": {
           "type": "string",
-          "description": "电话"
+          "description": "电话",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "收货地址"
@@ -24153,19 +24616,23 @@
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "分类编号"
+          "description": "分类编号",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "分类名称"
+          "description": "分类名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "sort": {
           "type": "integer",
           "format": "int32",
-          "description": "分类序号"
+          "description": "分类序号",
+          "refType": null
         }
       },
       "title": "新闻分类实体"
@@ -24176,59 +24643,72 @@
         "commentNum": {
           "type": "integer",
           "format": "int64",
-          "description": "评论数"
+          "description": "评论数",
+          "refType": null
         },
         "content": {
           "type": "string",
-          "description": "新闻内容"
+          "description": "新闻内容",
+          "refType": null
         },
         "cover": {
           "type": "string",
-          "description": "新闻封面图片地址"
+          "description": "新闻封面图片地址",
+          "refType": null
         },
         "hot": {
           "type": "string",
-          "description": "是否热点Y是N否"
+          "description": "是否热点Y是N否",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "新闻ID"
+          "description": "新闻ID",
+          "refType": null
         },
         "likeNum": {
           "type": "integer",
           "format": "int64",
-          "description": "点赞数"
+          "description": "点赞数",
+          "refType": null
         },
         "publishDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-02-10",
-          "description": "发布日期"
+          "description": "发布日期",
+          "refType": null
         },
         "readNum": {
           "type": "integer",
           "format": "int64",
-          "description": "阅读数"
+          "description": "阅读数",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "subTitle": {
           "type": "string",
-          "description": "新闻副标题"
+          "description": "新闻副标题",
+          "refType": null
         },
         "title": {
           "type": "string",
-          "description": "新闻标题"
+          "description": "新闻标题",
+          "refType": null
         },
         "top": {
           "type": "string",
-          "description": "是否推荐Y是N否"
+          "description": "是否推荐Y是N否",
+          "refType": null
         },
         "type": {
           "type": "string",
-          "description": "新闻类型"
+          "description": "新闻类型",
+          "refType": null
         }
       },
       "title": "新闻实体"
@@ -24240,41 +24720,50 @@
           "type": "string",
           "format": "date-time",
           "example": "2021-10-01 14:18:48",
-          "description": "评论时间"
+          "description": "评论时间",
+          "refType": null
         },
         "content": {
           "type": "string",
-          "description": "评论内容"
+          "description": "评论内容",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "评论ID"
+          "description": "评论ID",
+          "refType": null
         },
         "likeNum": {
           "type": "integer",
           "format": "int64",
-          "description": "点赞数"
+          "description": "点赞数",
+          "refType": null
         },
         "newsId": {
           "type": "integer",
           "format": "int64",
-          "description": "新闻ID"
+          "description": "新闻ID",
+          "refType": null
         },
         "newsTitle": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "评论人id"
+          "description": "评论人id",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "用户名"
+          "description": "用户名",
+          "refType": null
         }
       },
       "title": "新闻评论实体"
@@ -24285,44 +24774,54 @@
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "ID"
+          "description": "ID",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "服务图片"
+          "description": "服务图片",
+          "refType": null
         },
         "isRecommend": {
           "type": "string",
-          "description": "是否推荐"
+          "description": "是否推荐",
+          "refType": null
         },
         "link": {
           "type": "string",
-          "description": "链接"
+          "description": "链接",
+          "refType": null
         },
         "pid": {
           "type": "integer",
           "format": "int64",
-          "description": "父节点id"
+          "description": "父节点id",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "serviceDesc": {
           "type": "string",
-          "description": "服务简介"
+          "description": "服务简介",
+          "refType": null
         },
         "serviceName": {
           "type": "string",
-          "description": "服务名称"
+          "description": "服务名称",
+          "refType": null
         },
         "serviceType": {
           "type": "string",
-          "description": "服务类别"
+          "description": "服务类别",
+          "refType": null
         },
         "sort": {
           "type": "integer",
           "format": "int64",
-          "description": "序号"
+          "description": "序号",
+          "refType": null
         }
       },
       "title": "服务管理"
@@ -24332,27 +24831,33 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "地址"
+          "description": "地址",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "${comment}"
+          "description": "${comment}",
+          "refType": null
         },
         "phone": {
           "type": "string",
-          "description": "电话"
+          "description": "电话",
+          "refType": null
         },
         "placeName": {
           "type": "string",
-          "description": "检车公司"
+          "description": "检车公司",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "remarks": {
           "type": "string",
-          "description": "备注"
+          "description": "备注",
+          "refType": null
         }
       },
       "title": "检车地址"
@@ -24363,50 +24868,61 @@
         "addressId": {
           "type": "integer",
           "format": "int64",
-          "description": "预约地址"
+          "description": "预约地址",
+          "refType": null
         },
         "aptTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "预约时间"
+          "description": "预约时间",
+          "refType": null
         },
         "carId": {
           "type": "integer",
           "format": "int64",
-          "description": "车辆"
+          "description": "车辆",
+          "refType": null
         },
         "engineNo": {
           "type": "string",
-          "description": "发动机号"
+          "description": "发动机号",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "编号"
+          "description": "编号",
+          "refType": null
         },
         "placeName": {
           "type": "string",
-          "description": "检车公司名"
+          "description": "检车公司名",
+          "refType": null
         },
         "plateNo": {
           "type": "string",
-          "description": "车牌号"
+          "description": "车牌号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "success": {
           "type": "string",
-          "description": "是否成功"
+          "description": "是否成功",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户"
+          "description": "用户",
+          "refType": null
         },
         "userName": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "检车预约"
@@ -24416,40 +24932,48 @@
       "properties": {
         "amount": {
           "type": "number",
-          "description": "金额（元）"
+          "description": "金额（元）",
+          "refType": null
         },
         "gasFilling": {
           "type": "number",
           "format": "double",
-          "description": "加油量（升）"
+          "description": "加油量（升）",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "plateNo": {
           "type": "string",
-          "description": "车牌号"
+          "description": "车牌号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "travelDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "行驶日期"
+          "description": "行驶日期",
+          "refType": null
         },
         "travelDistance": {
           "type": "number",
           "format": "double",
-          "description": "行驶里程（公里）"
+          "description": "行驶里程（公里）",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户"
+          "description": "用户",
+          "refType": null
         }
       },
       "title": "油耗记录"
@@ -24460,53 +24984,65 @@
         "categoryId": {
           "type": "integer",
           "format": "int64",
-          "description": "活动类别id"
+          "description": "活动类别id",
+          "refType": null
         },
         "categoryName": {
           "type": "string",
-          "description": "活动类别"
+          "description": "活动类别",
+          "refType": null
         },
         "content": {
           "type": "string",
-          "description": "详情内容"
+          "description": "详情内容",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "活动图片"
+          "description": "活动图片",
+          "refType": null
         },
         "likeNum": {
           "type": "integer",
           "format": "int64",
-          "description": "点赞数量"
+          "description": "点赞数量",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "活动名称"
+          "description": "活动名称",
+          "refType": null
         },
         "publishTime": {
           "type": "string",
           "format": "date-time",
-          "description": "发布时间"
+          "description": "发布时间",
+          "refType": null
         },
         "recommend": {
           "type": "string",
-          "description": "是否推荐"
+          "description": "是否推荐",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "signupNum": {
           "type": "integer",
           "format": "int64",
-          "description": "报名人数"
+          "description": "报名人数",
+          "refType": null
         },
         "status": {
           "type": "string",
-          "description": "状态"
+          "description": "状态",
+          "refType": null
         }
       },
       "title": "活动实体"
@@ -24517,19 +25053,23 @@
         "activityId": {
           "type": "integer",
           "format": "int64",
-          "description": "活动id"
+          "description": "活动id",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "活动报名"
@@ -24539,23 +25079,28 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "类别图标"
+          "description": "类别图标",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "类别名称"
+          "description": "类别名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "sort": {
           "type": "integer",
           "format": "int32",
-          "description": "排序"
+          "description": "排序",
+          "refType": null
         }
       },
       "title": "活动类别"
@@ -24566,28 +25111,34 @@
         "activityId": {
           "type": "integer",
           "format": "int64",
-          "description": "活动id"
+          "description": "活动id",
+          "refType": null
         },
         "commentTime": {
           "type": "string",
           "format": "date-time",
-          "description": "评论时间"
+          "description": "评论时间",
+          "refType": null
         },
         "content": {
           "type": "string",
-          "description": "评论内容"
+          "description": "评论内容",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "活动评论"
@@ -24597,18 +25148,22 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "图标"
+          "description": "图标",
+          "refType": null
         },
         "liveName": {
           "type": "string",
-          "description": "类别名称"
+          "description": "类别名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "生活缴费分类"
@@ -24618,45 +25173,55 @@
       "properties": {
         "avatar": {
           "type": "string",
-          "description": "用户头像"
+          "description": "用户头像",
+          "refType": null
         },
         "balance": {
           "type": "number",
-          "description": "账户余额"
+          "description": "账户余额",
+          "refType": null
         },
         "email": {
           "type": "string",
-          "description": "用户邮箱"
+          "description": "用户邮箱",
+          "refType": null
         },
         "idCard": {
           "type": "string",
-          "description": "身份证号"
+          "description": "身份证号",
+          "refType": null
         },
         "nickName": {
           "type": "string",
-          "description": "用户昵称"
+          "description": "用户昵称",
+          "refType": null
         },
         "phonenumber": {
           "type": "string",
-          "description": "手机号"
+          "description": "手机号",
+          "refType": null
         },
         "score": {
           "type": "integer",
           "format": "int32",
-          "description": "用户积分"
+          "description": "用户积分",
+          "refType": null
         },
         "sex": {
           "type": "string",
-          "description": "用户性别 0 男 1 女"
+          "description": "用户性别 0 男 1 女",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户ID"
+          "description": "用户ID",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "用户名"
+          "description": "用户名",
+          "refType": null
         }
       },
       "title": "用户信息"
@@ -24666,19 +25231,23 @@
       "properties": {
         "code": {
           "type": "string",
-          "description": "验证码"
+          "description": "验证码",
+          "refType": null
         },
         "password": {
           "type": "string",
-          "description": "用户密码"
+          "description": "用户密码",
+          "refType": null
         },
         "username": {
           "type": "string",
-          "description": "用户名"
+          "description": "用户名",
+          "refType": null
         },
         "uuid": {
           "type": "string",
-          "description": "唯一标识"
+          "description": "唯一标识",
+          "refType": null
         }
       },
       "title": "登录信息"
@@ -24688,22 +25257,27 @@
       "properties": {
         "categoryName": {
           "type": "string",
-          "description": "科室名称"
+          "description": "科室名称",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "money": {
           "type": "number",
-          "description": "所需金额"
+          "description": "所需金额",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "type": {
           "type": "string",
-          "description": "门诊类型 1 专家诊 2 普通诊"
+          "description": "门诊类型 1 专家诊 2 普通诊",
+          "refType": null
         }
       },
       "title": "科室分类"
@@ -24713,42 +25287,51 @@
       "properties": {
         "cover": {
           "type": "string",
-          "description": "封面"
+          "description": "封面",
+          "refType": null
         },
         "description": {
           "type": "string",
-          "description": "详情"
+          "description": "详情",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "商品名"
+          "description": "商品名",
+          "refType": null
         },
         "price": {
           "type": "number",
-          "description": "价格"
+          "description": "价格",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "saleQuantity": {
           "type": "integer",
           "format": "int32",
-          "description": "销量"
+          "description": "销量",
+          "refType": null
         },
         "score": {
           "type": "integer",
           "format": "int32",
-          "description": "所需积分"
+          "description": "所需积分",
+          "refType": null
         },
         "total": {
           "type": "integer",
           "format": "int32",
-          "description": "总数量"
+          "description": "总数量",
+          "refType": null
         }
       },
       "title": "积分商品"
@@ -24759,19 +25342,23 @@
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "等级名"
+          "description": "等级名",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "score": {
           "type": "integer",
           "format": "int64",
-          "description": "所需积分"
+          "description": "所需积分",
+          "refType": null
         }
       },
       "title": "积分等级"
@@ -24783,36 +25370,44 @@
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 10:20:20",
-          "description": "变更日期"
+          "description": "变更日期",
+          "refType": null
         },
         "event": {
           "type": "string",
-          "description": "事件"
+          "description": "事件",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "score": {
           "type": "string",
-          "description": "积分变更"
+          "description": "积分变更",
+          "refType": null
         },
         "type": {
           "type": "string",
-          "description": "变更类型"
+          "description": "变更类型",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户"
+          "description": "用户",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "用户名"
+          "description": "用户名",
+          "refType": null
         }
       },
       "title": "积分记录"
@@ -24822,47 +25417,58 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "详细地址"
+          "description": "详细地址",
+          "refType": null
         },
         "area": {
           "type": "string",
-          "description": "区"
+          "description": "区",
+          "refType": null
         },
         "city": {
           "type": "string",
-          "description": "市"
+          "description": "市",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "idCard": {
           "type": "string",
-          "description": "身份证号"
+          "description": "身份证号",
+          "refType": null
         },
         "photo": {
           "type": "string",
-          "description": "现场照片路径"
+          "description": "现场照片路径",
+          "refType": null
         },
         "plateNo": {
           "type": "string",
-          "description": "车牌号"
+          "description": "车牌号",
+          "refType": null
         },
         "province": {
           "type": "string",
-          "description": "省"
+          "description": "省",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "tel": {
           "type": "string",
-          "description": "联系电话"
+          "description": "联系电话",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "申请人姓名"
+          "description": "申请人姓名",
+          "refType": null
         }
       },
       "title": "移车信息"
@@ -24873,11 +25479,13 @@
         "crowd": {
           "type": "integer",
           "format": "int32",
-          "description": "拥挤度"
+          "description": "拥挤度",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "站点名"
+          "description": "站点名",
+          "refType": null
         }
       },
       "title": "站点Vo"
@@ -24887,24 +25495,29 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "lineId": {
           "type": "integer",
           "format": "int64",
-          "description": "路线id"
+          "description": "路线id",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "站点名称"
+          "description": "站点名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "seq": {
           "type": "integer",
           "format": "int64",
-          "description": "顺序号"
+          "description": "顺序号",
+          "refType": null
         }
       },
       "title": "站点信息"
@@ -24918,11 +25531,13 @@
           "items": {
             "$ref": "#/definitions/站点线路Vo",
             "originalRef": "站点线路Vo"
-          }
+          },
+          "refType": "站点线路Vo"
         },
         "name": {
           "type": "string",
-          "description": "站点名称"
+          "description": "站点名称",
+          "refType": null
         }
       },
       "title": "站点信息_1"
@@ -24933,11 +25548,13 @@
         "lineId": {
           "type": "integer",
           "format": "int64",
-          "description": "线路id"
+          "description": "线路id",
+          "refType": null
         },
         "lineName": {
           "type": "string",
-          "description": "线路名"
+          "description": "线路名",
+          "refType": null
         }
       },
       "title": "站点线路Vo"
@@ -24947,57 +25564,70 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "现居住地"
+          "description": "现居住地",
+          "refType": null
         },
         "education": {
           "type": "string",
-          "description": "教育经历"
+          "description": "教育经历",
+          "refType": null
         },
         "experience": {
           "type": "string",
-          "description": "工作经历"
+          "description": "工作经历",
+          "refType": null
         },
         "files": {
           "type": "string",
-          "description": "简历附件地址"
+          "description": "简历附件地址",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "individualResume": {
           "type": "string",
-          "description": "个人简介"
+          "description": "个人简介",
+          "refType": null
         },
         "money": {
           "type": "string",
-          "description": "期望薪资"
+          "description": "期望薪资",
+          "refType": null
         },
         "mostEducation": {
           "type": "string",
-          "description": "最高学历"
+          "description": "最高学历",
+          "refType": null
         },
         "positionId": {
           "type": "integer",
           "format": "int64",
-          "description": "期望职位id"
+          "description": "期望职位id",
+          "refType": null
         },
         "positionName": {
           "type": "string",
-          "description": "期望职位"
+          "description": "期望职位",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "用户名"
+          "description": "用户名",
+          "refType": null
         }
       },
       "title": "简历管理"
@@ -25008,28 +25638,34 @@
         "cityId": {
           "type": "integer",
           "format": "int64",
-          "description": "城市id"
+          "description": "城市id",
+          "refType": null
         },
         "end": {
           "type": "string",
-          "description": "终点站"
+          "description": "终点站",
+          "refType": null
         },
         "endTime": {
           "type": "string",
-          "description": "末班时间"
+          "description": "末班时间",
+          "refType": null
         },
         "first": {
           "type": "string",
-          "description": "始发站"
+          "description": "始发站",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "km": {
           "type": "integer",
           "format": "int32",
-          "description": "km"
+          "description": "km",
+          "refType": null
         },
         "metroStepList": {
           "type": "array",
@@ -25037,28 +25673,34 @@
           "items": {
             "$ref": "#/definitions/站点信息",
             "originalRef": "站点信息"
-          }
+          },
+          "refType": "站点信息"
         },
         "name": {
           "type": "string",
-          "description": "路线名称"
+          "description": "路线名称",
+          "refType": null
         },
         "remainingTime": {
           "type": "integer",
-          "format": "int32"
+          "format": "int32",
+          "refType": null
         },
         "runStationsName": {
           "type": "string",
-          "description": "车辆运行站名称"
+          "description": "车辆运行站名称",
+          "refType": null
         },
         "startTime": {
           "type": "string",
-          "description": "首班时间"
+          "description": "首班时间",
+          "refType": null
         },
         "stationsNumber": {
           "type": "integer",
           "format": "int32",
-          "description": "站数"
+          "description": "站数",
+          "refType": null
         }
       },
       "title": "线路站点"
@@ -25072,12 +25714,14 @@
           "items": {
             "$ref": "#/definitions/地铁路线",
             "originalRef": "地铁路线"
-          }
+          },
+          "refType": "地铁路线"
         },
         "stepInfo": {
           "description": "站点信息",
           "$ref": "#/definitions/站点Vo",
-          "originalRef": "站点Vo"
+          "originalRef": "站点Vo",
+          "refType": "站点Vo"
         }
       },
       "title": "线路站点_1"
@@ -25087,51 +25731,62 @@
       "properties": {
         "amount": {
           "type": "number",
-          "description": "缴费金额"
+          "description": "缴费金额",
+          "refType": null
         },
         "billNo": {
           "type": "string",
-          "description": "账单号"
+          "description": "账单号",
+          "refType": null
         },
         "categoryId": {
           "type": "integer",
           "format": "int64",
-          "description": "缴费分类"
+          "description": "缴费分类",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键"
+          "description": "主键",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "图标"
+          "description": "图标",
+          "refType": null
         },
         "liveName": {
           "type": "string",
-          "description": "类别名称"
+          "description": "类别名称",
+          "refType": null
         },
         "paymentNo": {
           "type": "string",
-          "description": "缴费编号"
+          "description": "缴费编号",
+          "refType": null
         },
         "paymentType": {
           "type": "string",
-          "description": "支付方式"
+          "description": "支付方式",
+          "refType": null
         },
         "rechargeTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 10:42:51",
-          "description": "缴费时间"
+          "description": "缴费时间",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "缴费记录"
@@ -25141,40 +25796,49 @@
       "properties": {
         "amount": {
           "type": "number",
-          "description": "缴费金额"
+          "description": "缴费金额",
+          "refType": null
         },
         "billNo": {
           "type": "string",
-          "description": "账单单号"
+          "description": "账单单号",
+          "refType": null
         },
         "categoryId": {
           "type": "integer",
           "format": "int64",
-          "description": "分类id"
+          "description": "分类id",
+          "refType": null
         },
         "chargeUnit": {
           "type": "string",
-          "description": "收费单位"
+          "description": "收费单位",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键"
+          "description": "主键",
+          "refType": null
         },
         "payStatus": {
           "type": "string",
-          "description": "是否支付"
+          "description": "是否支付",
+          "refType": null
         },
         "paymentNo": {
           "type": "string",
-          "description": "缴费编号"
+          "description": "缴费编号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "title": {
           "type": "string",
-          "description": "标题"
+          "description": "标题",
+          "refType": null
         }
       },
       "title": "缴费账单"
@@ -25185,14 +25849,17 @@
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "professionName": {
           "type": "string",
-          "description": "职位名称"
+          "description": "职位名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         }
       },
       "title": "职位管理"
@@ -25203,48 +25870,59 @@
         "categoryId": {
           "type": "integer",
           "format": "int64",
-          "description": "分类id"
+          "description": "分类id",
+          "refType": null
         },
         "detail": {
           "type": "string",
-          "description": "菜品详情"
+          "description": "菜品详情",
+          "refType": null
         },
         "favorRate": {
           "type": "number",
-          "description": "好评率"
+          "description": "好评率",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "图片地址"
+          "description": "图片地址",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "菜名"
+          "description": "菜名",
+          "refType": null
         },
         "price": {
           "type": "number",
-          "description": "价格"
+          "description": "价格",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "saleQuantity": {
           "type": "integer",
           "format": "int32",
-          "description": "月销量"
+          "description": "月销量",
+          "refType": null
         },
         "sellerId": {
           "type": "integer",
           "format": "int64",
-          "description": "所属店家"
+          "description": "所属店家",
+          "refType": null
         },
         "status": {
           "type": "string",
-          "description": "状态"
+          "description": "状态",
+          "refType": null
         }
       },
       "title": "菜品信息"
@@ -25254,29 +25932,35 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "类别名称"
+          "description": "类别名称",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "sellerId": {
           "type": "integer",
           "format": "int64",
-          "description": "所属店家"
+          "description": "所属店家",
+          "refType": null
         },
         "sort": {
           "type": "integer",
           "format": "int32",
-          "description": "分类排序"
+          "description": "分类排序",
+          "refType": null
         },
         "themeId": {
           "type": "integer",
           "format": "int64",
-          "description": "所属主题"
+          "description": "所属主题",
+          "refType": null
         }
       },
       "title": "菜品分类"
@@ -25313,15 +25997,18 @@
       "properties": {
         "amount": {
           "type": "number",
-          "description": "订单总金额"
+          "description": "订单总金额",
+          "refType": null
         },
         "houseNumber": {
           "type": "string",
-          "description": "收货人门牌号"
+          "description": "收货人门牌号",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "orderItemList": {
           "type": "array",
@@ -25329,58 +26016,71 @@
           "items": {
             "$ref": "#/definitions/订单详情",
             "originalRef": "订单详情"
-          }
+          },
+          "refType": "订单详情"
         },
         "orderNo": {
           "type": "string",
-          "description": "订单号"
+          "description": "订单号",
+          "refType": null
         },
         "payTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 10:42:51",
-          "description": "支付时间"
+          "description": "支付时间",
+          "refType": null
         },
         "paymentType": {
           "type": "string",
-          "description": "支付类型"
+          "description": "支付类型",
+          "refType": null
         },
         "postage": {
           "type": "number",
-          "description": "派送费"
+          "description": "派送费",
+          "refType": null
         },
         "receiverAddress": {
           "type": "string",
-          "description": "收货人详细地址"
+          "description": "收货人详细地址",
+          "refType": null
         },
         "receiverLabel": {
           "type": "string",
-          "description": "地址标签"
+          "description": "地址标签",
+          "refType": null
         },
         "receiverName": {
           "type": "string",
-          "description": "收货人"
+          "description": "收货人",
+          "refType": null
         },
         "receiverPhone": {
           "type": "string",
-          "description": "收货人联系电话"
+          "description": "收货人联系电话",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "sellerId": {
           "type": "integer",
           "format": "int64",
-          "description": "店家id"
+          "description": "店家id",
+          "refType": null
         },
         "status": {
           "type": "string",
-          "description": "订单状态"
+          "description": "订单状态",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "订单"
@@ -25390,23 +26090,28 @@
       "properties": {
         "addressDetail": {
           "type": "string",
-          "description": "详细地址"
+          "description": "详细地址",
+          "refType": null
         },
         "amount": {
           "type": "number",
-          "description": "金额"
+          "description": "金额",
+          "refType": null
         },
         "houseNumber": {
           "type": "string",
-          "description": "门牌号"
+          "description": "门牌号",
+          "refType": null
         },
         "label": {
           "type": "string",
-          "description": "标签"
+          "description": "标签",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "收货人"
+          "description": "收货人",
+          "refType": null
         },
         "orderItemList": {
           "type": "array",
@@ -25414,20 +26119,24 @@
           "items": {
             "$ref": "#/definitions/订单详情",
             "originalRef": "订单详情"
-          }
+          },
+          "refType": "订单详情"
         },
         "phone": {
           "type": "string",
-          "description": "联系电话"
+          "description": "联系电话",
+          "refType": null
         },
         "postage": {
           "type": "number",
-          "description": "邮费"
+          "description": "邮费",
+          "refType": null
         },
         "sellerId": {
           "type": "integer",
           "format": "int64",
-          "description": "店铺Id"
+          "description": "店铺Id",
+          "refType": null
         }
       },
       "title": "订单form"
@@ -25438,21 +26147,25 @@
         "endTime": {
           "type": "string",
           "example": "11:00",
-          "description": "结束时间"
+          "description": "结束时间",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "订单id"
+          "description": "订单id",
+          "refType": null
         },
         "movieId": {
           "type": "integer",
           "format": "int64",
-          "description": "影片id"
+          "description": "影片id",
+          "refType": null
         },
         "movieName": {
           "type": "string",
-          "description": "影片名"
+          "description": "影片名",
+          "refType": null
         },
         "orderItems": {
           "type": "array",
@@ -25460,62 +26173,75 @@
           "items": {
             "$ref": "#/definitions/订单明细实体",
             "originalRef": "订单明细实体"
-          }
+          },
+          "refType": "订单明细实体"
         },
         "orderNo": {
           "type": "string",
-          "description": "订单号"
+          "description": "订单号",
+          "refType": null
         },
         "payTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 10:20:10",
-          "description": "支付时间"
+          "description": "支付时间",
+          "refType": null
         },
         "playDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "播放日期"
+          "description": "播放日期",
+          "refType": null
         },
         "price": {
           "type": "number",
-          "description": "总价"
+          "description": "总价",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "roomId": {
           "type": "integer",
           "format": "int64",
-          "description": "影厅id"
+          "description": "影厅id",
+          "refType": null
         },
         "roomName": {
           "type": "string",
-          "description": "影厅名"
+          "description": "影厅名",
+          "refType": null
         },
         "startTime": {
           "type": "string",
           "example": "09:00",
-          "description": "开始时间"
+          "description": "开始时间",
+          "refType": null
         },
         "status": {
           "type": "string",
-          "description": "是否支付"
+          "description": "是否支付",
+          "refType": null
         },
         "theaterId": {
           "type": "integer",
           "format": "int64",
-          "description": "影院id"
+          "description": "影院id",
+          "refType": null
         },
         "theatreName": {
           "type": "string",
-          "description": "影院名"
+          "description": "影院名",
+          "refType": null
         },
         "timesId": {
           "type": "integer",
           "format": "int64",
-          "description": "场次id"
+          "description": "场次id",
+          "refType": null
         }
       },
       "title": "订单实体"
@@ -25526,32 +26252,39 @@
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "编号"
+          "description": "编号",
+          "refType": null
         },
         "orderId": {
           "type": "integer",
           "format": "int64",
-          "description": "订单id"
+          "description": "订单id",
+          "refType": null
         },
         "price": {
           "type": "number",
-          "description": "影票价格"
+          "description": "影票价格",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "seatCol": {
           "type": "string",
-          "description": "座位号"
+          "description": "座位号",
+          "refType": null
         },
         "seatId": {
           "type": "integer",
           "format": "int64",
-          "description": "座位id"
+          "description": "座位id",
+          "refType": null
         },
         "seatRow": {
           "type": "string",
-          "description": "排号"
+          "description": "排号",
+          "refType": null
         }
       },
       "title": "订单明细实体"
@@ -25561,45 +26294,55 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "orderNo": {
           "type": "string",
-          "description": "订单号"
+          "description": "订单号",
+          "refType": null
         },
         "productId": {
           "type": "integer",
           "format": "int64",
-          "description": "菜品id"
+          "description": "菜品id",
+          "refType": null
         },
         "productImage": {
           "type": "string",
-          "description": "菜品图片"
+          "description": "菜品图片",
+          "refType": null
         },
         "productName": {
           "type": "string",
-          "description": "菜品名"
+          "description": "菜品名",
+          "refType": null
         },
         "productPrice": {
           "type": "number",
-          "description": "菜品单价"
+          "description": "菜品单价",
+          "refType": null
         },
         "quantity": {
           "type": "integer",
           "format": "int64",
-          "description": "购买数量"
+          "description": "购买数量",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "totalPrice": {
           "type": "number",
-          "description": "单样菜品总价"
+          "description": "单样菜品总价",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "订单详情"
@@ -25609,37 +26352,45 @@
       "properties": {
         "address": {
           "type": "string",
-          "description": "家庭地址"
+          "description": "家庭地址",
+          "refType": null
         },
         "categoryId": {
           "type": "integer",
           "format": "int64",
-          "description": "类型"
+          "description": "类型",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键"
+          "description": "主键",
+          "refType": null
         },
         "idCard": {
           "type": "string",
-          "description": "身份证号"
+          "description": "身份证号",
+          "refType": null
         },
         "ownerName": {
           "type": "string",
-          "description": "户主名"
+          "description": "户主名",
+          "refType": null
         },
         "paymentNo": {
           "type": "string",
-          "description": "缴费编号"
+          "description": "缴费编号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "账户信息"
@@ -25650,23 +26401,28 @@
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键"
+          "description": "主键",
+          "refType": null
         },
         "plateNo": {
           "type": "string",
-          "description": "车牌号"
+          "description": "车牌号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "type": {
           "type": "string",
-          "description": "车型"
+          "description": "车型",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户"
+          "description": "用户",
+          "refType": null
         }
       },
       "title": "车辆信息"
@@ -25676,28 +26432,34 @@
       "properties": {
         "engineNo": {
           "type": "string",
-          "description": "引擎号"
+          "description": "引擎号",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "plateNo": {
           "type": "string",
-          "description": "车牌号"
+          "description": "车牌号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "type": {
           "type": "string",
-          "description": "号牌类型"
+          "description": "号牌类型",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户"
+          "description": "用户",
+          "refType": null
         }
       },
       "title": "车辆管理"
@@ -25709,72 +26471,88 @@
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 10:20:10",
-          "description": "违章时间"
+          "description": "违章时间",
+          "refType": null
         },
         "catType": {
           "type": "string",
-          "description": "号牌种类"
+          "description": "号牌种类",
+          "refType": null
         },
         "deductMarks": {
           "type": "string",
-          "description": "扣分"
+          "description": "扣分",
+          "refType": null
         },
         "disposeState": {
           "type": "string",
-          "description": "处理状态"
+          "description": "处理状态",
+          "refType": null
         },
         "engineNumber": {
           "type": "string",
-          "description": "发动机号"
+          "description": "发动机号",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "illegalSites": {
           "type": "string",
-          "description": "违章地点"
+          "description": "违章地点",
+          "refType": null
         },
         "imgUrl": {
           "type": "string",
-          "description": "违章照片"
+          "description": "违章照片",
+          "refType": null
         },
         "licencePlate": {
           "type": "string",
-          "description": "车牌"
+          "description": "车牌",
+          "refType": null
         },
         "money": {
           "type": "string",
-          "description": "金额"
+          "description": "金额",
+          "refType": null
         },
         "noticeNo": {
           "type": "string",
-          "description": "通知书号"
+          "description": "通知书号",
+          "refType": null
         },
         "performDate": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "处罚日期"
+          "description": "处罚日期",
+          "refType": null
         },
         "performOffice": {
           "type": "string",
-          "description": "处罚单位"
+          "description": "处罚单位",
+          "refType": null
         },
         "plateNoList": {
           "type": "array",
           "description": "车牌号数组",
           "items": {
             "type": "string"
-          }
+          },
+          "refType": "string"
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "trafficOffence": {
           "type": "string",
-          "description": "违章行为"
+          "description": "违章行为",
+          "refType": null
         }
       },
       "title": "违章查询"
@@ -25784,11 +26562,13 @@
       "properties": {
         "orderNo": {
           "type": "string",
-          "description": "订单号"
+          "description": "订单号",
+          "refType": null
         },
         "reason": {
           "type": "string",
-          "description": "退款原因"
+          "description": "退款原因",
+          "refType": null
         }
       },
       "title": "退款信息参数"
@@ -25798,41 +26578,50 @@
       "properties": {
         "appType": {
           "type": "string",
-          "description": "应用类别"
+          "description": "应用类别",
+          "refType": null
         },
         "changeAmount": {
           "type": "number",
-          "description": "变更金额"
+          "description": "变更金额",
+          "refType": null
         },
         "changeTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 10:50:35",
-          "description": "变更日期"
+          "description": "变更日期",
+          "refType": null
         },
         "changeType": {
           "type": "string",
-          "description": "变更类型"
+          "description": "变更类型",
+          "refType": null
         },
         "event": {
           "type": "string",
-          "description": "变更事件"
+          "description": "变更事件",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         },
         "userName": {
           "type": "string",
-          "description": "用户名"
+          "description": "用户名",
+          "refType": null
         }
       },
       "title": "钱包金额变动记录"
@@ -25842,33 +26631,40 @@
       "properties": {
         "cover": {
           "type": "string",
-          "description": "封面图片地址"
+          "description": "封面图片地址",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "ID"
+          "description": "ID",
+          "refType": null
         },
         "introduction": {
           "type": "string",
-          "description": "影片介绍"
+          "description": "影片介绍",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "片名"
+          "description": "片名",
+          "refType": null
         },
         "playDate": {
           "type": "string",
           "format": "date-time",
           "example": "2012-05-15",
-          "description": "yyyy-MM-dd"
+          "description": "yyyy-MM-dd",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "video": {
           "type": "string",
-          "description": "视频地址"
+          "description": "视频地址",
+          "refType": null
         }
       },
       "title": "预告片实体"
@@ -25879,49 +26675,60 @@
         "categoryId": {
           "type": "integer",
           "format": "int64",
-          "description": "科室编号"
+          "description": "科室编号",
+          "refType": null
         },
         "categoryName": {
           "type": "string",
-          "description": "科室类别名称"
+          "description": "科室类别名称",
+          "refType": null
         },
         "id": {
           "type": "integer",
-          "format": "int64"
+          "format": "int64",
+          "refType": null
         },
         "money": {
           "type": "number",
-          "description": "金额"
+          "description": "金额",
+          "refType": null
         },
         "orderNo": {
           "type": "string",
-          "description": "预约单号"
+          "description": "预约单号",
+          "refType": null
         },
         "patientName": {
           "type": "string",
-          "description": "患者姓名"
+          "description": "患者姓名",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "reserveTime": {
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10 10:30",
-          "description": "预约时间"
+          "description": "预约时间",
+          "refType": null
         },
         "status": {
           "type": "string",
-          "description": "订单状态"
+          "description": "订单状态",
+          "refType": null
         },
         "type": {
           "type": "string",
-          "description": "门诊类型 1 专家诊 2 普通诊"
+          "description": "门诊类型 1 专家诊 2 普通诊",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户id"
+          "description": "用户id",
+          "refType": null
         }
       },
       "title": "预约信息"
@@ -25932,18 +26739,22 @@
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "编号"
+          "description": "编号",
+          "refType": null
         },
         "notice": {
           "type": "string",
-          "description": "服务须知"
+          "description": "服务须知",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "title": {
           "type": "string",
-          "description": "标题"
+          "description": "标题",
+          "refType": null
         }
       },
       "title": "预约须知"
@@ -25955,57 +26766,70 @@
           "type": "string",
           "format": "date-time",
           "example": "2021-09-10",
-          "description": "申领日期"
+          "description": "申领日期",
+          "refType": null
         },
         "auditOffice": {
           "type": "string",
-          "description": "发证机关"
+          "description": "发证机关",
+          "refType": null
         },
         "contact": {
           "type": "string",
-          "description": "联系方式"
+          "description": "联系方式",
+          "refType": null
         },
         "fileNo": {
           "type": "string",
-          "description": "档案编号"
+          "description": "档案编号",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int64",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "idCard": {
           "type": "string",
-          "description": "身份证号"
+          "description": "身份证号",
+          "refType": null
         },
         "licenseLevel": {
           "type": "string",
-          "description": "准驾车型"
+          "description": "准驾车型",
+          "refType": null
         },
         "licenseNo": {
           "type": "string",
-          "description": "驾驶证号"
+          "description": "驾驶证号",
+          "refType": null
         },
         "remark": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "score": {
           "type": "integer",
           "format": "int64",
-          "description": "分数"
+          "description": "分数",
+          "refType": null
         },
         "timeout": {
           "type": "string",
-          "description": "是否过期"
+          "description": "是否过期",
+          "refType": null
         },
         "userId": {
           "type": "integer",
           "format": "int64",
-          "description": "用户"
+          "description": "用户",
+          "refType": null
         },
         "verifyDate": {
           "type": "string",
-          "description": "有效期"
+          "description": "有效期",
+          "refType": null
         }
       },
       "title": "驾驶证管理"
